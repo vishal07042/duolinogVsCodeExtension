@@ -66,6 +66,11 @@ function activate(context) {
         onKeyPress(key);
       }
     });
+
+  //   vscode.window.onDidChangeTextEditorSelection((event) => {
+	// 	const key = event.textEditor.document.getText(event.selections[0]);
+	// 	onKeyPress(key);
+	// });
   });
 
   context.subscriptions.push(disposable);
